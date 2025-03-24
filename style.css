@@ -1,0 +1,184 @@
+/* CSS General */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    font-family: "VT323", monospace;
+}
+
+.roadway {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* CSS dos controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 12px;
+
+}
+
+.controls .appear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22F522;
+    border: 10px solid #667;
+    height: 100%;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 3rem;
+    
+}
+
+.controls button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 2.3rem;
+    border: 6px solid #999;
+}
+
+.controls button.emphasis {
+    border-color: yellow;
+}
+
+
+/* CSS road */
+.road {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #777;
+    gap: 30px;
+    border-top: 10px solid #fff;
+}
+
+.road > .tracks {
+    flex: 1;
+    height: 10px;
+    background-color: #DDD;
+}
+
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #409940;
+
+}
+
+.tree::after {
+    content:"";
+    width: 20px;
+    height: 100px;
+    background-color: #4d3131;
+}
+
+.building {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    background-color: #319DA0;
+    gap: 10px;
+}
+
+.pillar {
+    display: flex;
+    flex-direction: column;
+    background-color: #0006;
+    flex: 2;
+    
+}
+
+.shaft {
+    display: flex;
+    background-color: #fff9;
+    flex: 1;
+}
+
+.floor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    border-bottom: 2px solid #fff;
+    
+}
+
+.door {
+    display: flex;    
+    align-items: center;
+    padding: 3%;
+    width: 40%;
+    height: 80%;
+    background-color: brown;
+    border: solid 5px #fff6;
+    border-bottom-width: 0;
+}
+
+.door::after {
+    content: "";
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: #fff9;
+}
+
+.land {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.window {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #fffcff;
+    background-color: #068888;
+    height: 50%;
+    width: 40%;
+
+}
+
+.window::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    top: 0;
+    height: 100%;
+    width: 1px;
+}
+.window::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
